@@ -9,21 +9,33 @@
     margin: 0;
 }
 /* --------------------------------------------------------- */
+/* body selector */
+body{
+    background-color: lavender;
+}
+/* --------------------------------------------------------- */
 /* header selectors */
 header {
     display: flex;
     justify-content: space-between;
     background-image: url(../images/header\ BGI.png);
     color: lavender;
-    align-items: center;
+    align-items: baseline;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
 header h1 {
     font-size: 80px;
-    text-decoration: underline;
 }
 
-body{
-    background-color: lavender;
+header a {
+    text-decoration: underline;
+}
+/* --------------------------------------------------------- */
+/* main selectors */
+main{
+    display: flex;
+    justify-content: center;
 }
