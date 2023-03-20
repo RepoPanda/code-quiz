@@ -1,0 +1,29 @@
+/* Theme colors */
+:root{
+    --light: beige;
+}
+/* --------------------------------------------------------- */
+/* Universal selector */
+* {
+    padding: 0;
+    margin: 0;
+}
+/* --------------------------------------------------------- */
+/* header selectors */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/header\ BGI.png);
+    color: lavender;
+    align-items: center;
+
+}
+
+header h1 {
+    font-size: 80px;
+    text-decoration: underline;
+}
+
+body{
+    background-color: lavender;
+}
