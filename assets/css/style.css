@@ -1,6 +1,6 @@
 /* Theme colors */
 :root{
-    --light: beige;
+    --light:lavender;
 }
 /* --------------------------------------------------------- */
 /* Universal selector */
@@ -11,7 +11,7 @@
 /* --------------------------------------------------------- */
 /* body selector */
 body{
-    background-color: lavender;
+    background-color: rgba(102, 38, 101, 0.902);
 }
 /* --------------------------------------------------------- */
 /* header selectors */
@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-image: url(../images/header\ BGI.png);
-    color: lavender;
+    color: var(--light);
     align-items: baseline;
     padding-left: 10px;
     padding-right: 10px;
@@ -35,7 +35,36 @@ header a {
 }
 /* --------------------------------------------------------- */
 /* main selectors */
-main{
+
+
+#contentBox{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-content: center;
+    left: 33%;
+    top: 20%;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border: 5px solid purple;
+    border-radius: 5%;
+    background-color: var(--light);
+}
+
+#questionsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#questionsDiv h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#questionsDiv p {
     display: flex;
     justify-content: center;
 }
