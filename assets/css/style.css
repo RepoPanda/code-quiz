@@ -19,22 +19,15 @@ body{
 /* header selectors */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-image: url(../images/header\ BGI.png);
     color: var(--light);
-    align-items: baseline;
-    padding-left: 10px;
-    padding-right: 10px;
 
 }
 
-header h1 {
+h1 {
     font-size: 80px;
     font-family: Papyrus;
-}
-
-header a {
-    text-decoration: underline;
 }
 /* --------------------------------------------------------- */
 /*section/'quiz' selectors */
@@ -53,6 +46,8 @@ section{
     border-radius: 5%;
     background-color: var(--light);
 }
+/* --------------------------------------------------------- */
+/*quizDiv selectors */
 
 #quizDiv{
     display: flex;
@@ -60,19 +55,36 @@ section{
     justify-content: space-between;
 
 }
+/* --------------------------------------------------------- */
+/*quizHeader selectors */
 
-#quizDiv h2 {
+#quizHeader {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+#quizHeader a {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#quizHeader h2 {
+    text-align: center;
     font-family: Papyrus;
     font-size: 35px;
     
 }
 
-#quizDiv p {
+#quizHeader #quizTimer{
+    text-align: center;
+}
+/* --------------------------------------------------------- */
+
+p {
     display: flex;
     justify-content: center;
 }
+
 /* button selectors */
 #quizDiv button {
    border-radius: 12px; 
