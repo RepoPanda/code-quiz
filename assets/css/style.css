@@ -1,6 +1,8 @@
 /* Theme colors */
 :root{
     --light:lavender;
+
+
 }
 /* --------------------------------------------------------- */
 /* Universal selector */
@@ -28,16 +30,16 @@ header {
 
 header h1 {
     font-size: 80px;
+    font-family: Papyrus;
 }
 
 header a {
     text-decoration: underline;
 }
 /* --------------------------------------------------------- */
-/* main selectors */
+/*section/'quiz' selectors */
 
-
-#contentBox{
+section{
     display: flex;
     justify-content: center;
     position: absolute;
@@ -52,19 +54,30 @@ header a {
     background-color: var(--light);
 }
 
-#questionsDiv{
+#quizDiv{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
 
-#questionsDiv h2 {
+#quizDiv h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Papyrus;
+    font-size: 35px;
+    
+}
+
+#quizDiv p {
     display: flex;
     justify-content: center;
 }
-
-#questionsDiv p {
-    display: flex;
-    justify-content: center;
+/* button selectors */
+#quizDiv button {
+   border-radius: 12px; 
+   margin-left: 30%;
+   margin-right: 30%;
+   margin-bottom: 25px;
+   
 }
