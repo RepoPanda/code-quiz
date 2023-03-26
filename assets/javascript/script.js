@@ -33,11 +33,12 @@ var questions = [
       answer: 'console.log',
     },
   ];
-  
+var startQuizButton = document.querySelector('#startQuiz');
+var displayedTime = document.querySelector('#displayTime');
 
 //   Pseudocode
 /*
-1. WHEN I click the START QUIZ button:
+1. WHEN I click the START QUIZ button: (eventlistener will be needed on button)
     a.timer will begin
     b.questions will load up
 
@@ -54,3 +55,15 @@ var questions = [
 4. WHEN the game is over:
     a. i can save my initials and my score
 */
+
+//-------------------------------------------------------------------------------
+/*
+1. WHEN I click the START QUIZ button:
+    a.timer will begin
+    b.questions will load up
+*/
+// (1)event listener added to START QUIZ button in html.
+//(a) timer function to be assisnged
+startQuizButton.addEventListener("click", function (){
+  
+});
