@@ -33,10 +33,8 @@ var questions = [
       answer: 'console.log',
     },
   ];
-var startQuizButton = document.querySelector('#startQuiz');
-var displayedTime = document.querySelector('#displayTime');
 
-//   Pseudocode
+  //   Pseudocode
 /*
 1. WHEN I click the START QUIZ button: (eventlistener will be needed on button)
     a.timer will begin
@@ -62,8 +60,32 @@ var displayedTime = document.querySelector('#displayTime');
     a.timer will begin
     b.questions will load up
 */
+
+// ----------------Query Selectors--------------------------
+var startQuizButton = document.querySelector('#startQuiz');
+var displayedTime = document.querySelector('#displayTime');
+
+// ----------------Global Variables-------------------------
+// number reliant on amount of questions
+var timeLeft = questions.length * 15; // 75 (for now)
+
+// ------------------------------------------------------------------------------
 // (1)event listener added to START QUIZ button in html.
 //(a) timer function to be assisnged
 startQuizButton.addEventListener("click", function (){
-  
+
 });
+
+// countdown timer
+function countDown(){
+  const minutes = Math.floor(timeLeft/60);
+  var seconds = timeLeft % 60;
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+
+  displayedTime.innerHTML = `${minutes}:${seconds}`
+  timeLeft--;
+};
+
+setInterval(countDown, 1000);
+
+// Timer Made

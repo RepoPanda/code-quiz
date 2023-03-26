@@ -64,25 +64,31 @@ section{
 }
 
 #quizHeader a {
+
     text-decoration: underline;
     text-align: center;
 }
 
 #quizHeader h2 {
+    margin-top: 20px;
     text-align: center;
     font-family: Papyrus;
     font-size: 35px;
     color: rgb(93, 2, 93);
 }
 
-#quizHeader #quizTimer{
-    text-align: center;
+#quizHeader #displayTime{
+    display: flex;
+    font-size: 23px;
+    color:blueviolet;
+    font-family: papyrus;
 }
 /* --------------------------------------------------------- */
 
 p {
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 /* button selectors */
