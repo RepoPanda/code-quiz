@@ -71,21 +71,19 @@ var timeLeft = questions.length * 15; // 75 (for now)
 
 // ------------------------------------------------------------------------------
 // (1)event listener added to START QUIZ button in html.
-//(a) timer function to be assisnged
+//(a) timer function created
 startQuizButton.addEventListener("click", function (){
-
+  function countDown(){
+    const minutes = Math.floor(timeLeft/60);
+    var seconds = timeLeft % 60;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+  
+    displayedTime.innerHTML = `${minutes}:${seconds}`
+    timeLeft--;
+  };
+  setInterval(countDown, 1000);
+  
 });
 
-// countdown timer
-function countDown(){
-  const minutes = Math.floor(timeLeft/60);
-  var seconds = timeLeft % 60;
-  seconds = seconds < 10 ? '0' + seconds : seconds;
 
-  displayedTime.innerHTML = `${minutes}:${seconds}`
-  timeLeft--;
-};
-
-setInterval(countDown, 1000);
-
-// Timer Made
+// b.questions will load up
