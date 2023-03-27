@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Code Quiz</title>
-  </head>
 
-  <body>
-    <header>
-        <h1>Code Quiz</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Code Quiz</title>
+</head>
 
-    <main>
-        <section>
-          <!-- quiz content div -->
-          <div id="quizDiv">
-            <div id="quizHeader">
-              <!-- link to highscores/NEED TO CREATE another html page for high scores -->
-              <!-- <a href="">View Highscores</a> -->
-              <a href="">Highscores</a>
-              <h2>Coding Quiz Challenge</h2>
-              <!-- timer will go here.-->
-              <div id="displayTime">1:15</div>
-            </div>
-            <p>Try to answer the following code-related questions
-              within the time limit. Keep in mind that incorrect
-              answers will penalize your score/time by ten seconds!
-            </p>
-            <ul id="answersUl"></ul>
-            <!-- start quiz button. Id will be linked to java script  -->
-            <button id="startQuiz">Start Quiz</button>
+<body>
+  <header>
+    <h1>Code Quiz</h1>
+  </header>
+
+  <main>
+    <section>
+      <div id="content-box">
+        <div id="quizHeader">
+          <div id="quizHeaderHsAndTime">
+            <!-- link to highscores/NEED TO CREATE another html page for high scores -->
+            <a href="">Highscores</a>
+            <!-- timer will go here.-->
+            <div id="displayTime">1:15</div>
           </div>
-        </section>
+          <h2>Coding Quiz Challenge</h2>
+        </div>
+        <!-- quiz content div -->
+        <div id="quizDiv">
+          <p>Try to answer the following code-related questions
+            within the time limit. Keep in mind that incorrect
+            answers will penalize your score/time by ten seconds!
+          </p>
+          <ul id="answersUl"></ul>
+          <!-- start quiz button. Id will be linked to java script  -->
+          <button id="startQuiz">Start Quiz</button>
+        </div>
+      </div>
+    </section>
 
 
     <script src="./assets/javascript/script.js"></script>
-    
-        </div>
-    </main>
-  </body>
+
+    </div>
+  </main>
+</body>
+
 </html>
